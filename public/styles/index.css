@@ -33,9 +33,25 @@ span{
 button {
     font-size: .8rem;
     font-weight: bold;
-
     font-family: 'Noto Sans JP', sans-serif;
     color: var(--primary-color);
 
+    padding: 1rem;
+    min-width: 20rem;
+    border-radius: .5rem;
+
+    margin-top: 2rem;
+
+    user-select: none;
+    outline: none;
+
     background: var(--secondary-color);
+
+    transition: background .4s, transform .3s;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: translateY(-.4rem);
+    background: var(--secondary-hover);
 }
